@@ -64,7 +64,7 @@ function goToRegister() {
       case document.getElementById('formInputPassword').value.length < 6:
         return false;
         break;
-      case document.getElementById('formInputPassword').value == '' &&
+      case document.getElementById('formInputPassword').value !== '' &&
         document.getElementById('formInputPassword').value.length >= 6:
         return true;
         break;
